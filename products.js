@@ -49,6 +49,7 @@ async function list(options = {}) {
     .sort({ _id: 1 })
     .skip(offset)
     .limit(limit)
+    .exec()
 
   return products
 }
